@@ -1,0 +1,146 @@
+/* Palette personalizzata */
+.text-primary-custom { color: #804F4C !important; }
+.bg-primary-custom { background-color: #804F4C !important; }
+.border-primary-custom { border-color: #804F4C !important; }
+
+.btn-outline-primary-custom {
+  color: #804F4C;
+  border-color: #804F4C;
+}
+.btn-outline-primary-custom:hover {
+  background-color: #9EA8A7;
+  color: #fff;
+  border-color: #9EA8A7;
+}
+
+/* Stili esistenti */
+.display-5 { font-size: 2.5rem; }
+
+.service-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+ul li { margin-bottom: 10px; }
+
+#reviews .text-warning {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+#reviews .card,
+#reviews .p-4 {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#reviews .p-4:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.card,
+.p-4.bg-white.shadow-sm.rounded {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover,
+.p-4.bg-white.shadow-sm.rounded:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.calendar-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  border: 1px solid #e0e0e0;
+}
+
+#appuntamenti iframe {
+  border-radius: 6px;
+}
+
+.img-fixed {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.stars img {
+  width: 28px;
+  height: 28px;
+  margin: 0 4px;
+  filter: drop-shadow(0 0 2px gold);
+  transition: filter 0.3s ease;
+}
+.stars img:hover {
+  filter: drop-shadow(0 0 5px gold);
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border-width: 2px !important;
+}
+.card-hover:hover {
+  transform: translateY(-10px) scale(1.04);
+  box-shadow: 0 15px 30px rgba(25, 135, 84, 0.3);
+  border-color: #804F4C !important;
+}
+
+.card-body { padding: 1.5rem; }
+
+#cookie-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  max-width: 600px;
+  background: white;
+  color:  #804F4C;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  z-index: 1050;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+#cookie-banner.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#cookie-banner a {
+  color: #804F4C;
+  text-decoration: underline;
+}
+
+#accept-cookies {
+  background: #804F4C;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+/* Fix overflow e altezza Calendly */
+.calendly-inline-widget,
+#calendly-embed {
+  overflow: hidden;
+}
+
+/* Eventuale scorrimento della pagina */
+body {
+  overflow: unset !important;
+}
