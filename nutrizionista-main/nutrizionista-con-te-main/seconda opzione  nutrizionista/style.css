@@ -1,0 +1,327 @@
+/* Palette personalizzata */
+.text-primary-custom { color: #804F4C !important; }
+.bg-primary-custom { background-color: #804F4C !important; }
+.border-primary-custom { border-color: #804F4C !important; }
+
+.btn-outline-primary-custom {
+  color: #804F4C;
+  border-color: #804F4C;
+}
+.btn-outline-primary-custom:hover {
+  background-color: #9EA8A7;
+  color: #fff;
+  border-color: #9EA8A7;
+}
+
+/* Stili esistenti */
+.display-5 { font-size: 2.5rem; }
+
+.service-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+ul li { margin-bottom: 10px; }
+
+#reviews .text-warning {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+#reviews .card,
+#reviews .p-4 {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#reviews .p-4:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.card,
+.p-4.bg-white.shadow-sm.rounded {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover,
+.p-4.bg-white.shadow-sm.rounded:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.calendar-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  border: 1px solid #e0e0e0;
+}
+
+#appuntamenti iframe {
+  border-radius: 6px;
+}
+
+.img-fixed {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.stars img {
+  width: 28px;
+  height: 28px;
+  margin: 0 4px;
+  filter: drop-shadow(0 0 2px gold);
+  transition: filter 0.3s ease;
+}
+.stars img:hover {
+  filter: drop-shadow(0 0 5px gold);
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border-width: 2px !important;
+}
+.card-hover:hover {
+  transform: translateY(-10px) scale(1.04);
+  box-shadow: 0 15px 30px rgba(25, 135, 84, 0.3);
+  border-color: #804F4C !important;
+}
+
+.card-body { padding: 1.5rem; }
+
+#cookie-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  max-width: 600px;
+  background: white;
+  color:  #804F4C;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  z-index: 1050;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+#cookie-banner.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#cookie-banner a {
+  color: #804F4C;
+  text-decoration: underline;
+}
+
+#accept-cookies {
+  background: #804F4C;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#decline-cookies {
+  background: #804F4C;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#customize-cookies {
+  background: #804F4C;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+/* Fix overflow e altezza Calendly */
+.calendly-inline-widget,
+#calendly-embed {
+  overflow: hidden;
+}
+
+/* Eventuale scorrimento della pagina */
+body {
+  overflow: unset !important;
+}
+
+.image-frame {
+  position: relative;
+  display: inline-block;
+}
+
+.main-image {
+  display: block;
+  max-height: 550px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Stile comune cornice */
+.corner {
+  position: absolute;
+  width: 60px; /* regola dimensione */
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+  mix-blend-mode: multiply; /* fonde bene con immagine */
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1));
+}
+
+/* Posizioni angoli */
+.corner-top-left {
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.corner-top-right {
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.corner-bottom-left {
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%, 50%);
+}
+
+.corner-bottom-right {
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+#fullpage-vector {
+  width: 100vw;
+  height: 50vh; /* full viewport height */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff; /* o trasparente */
+}
+
+#fullpage-vector svg {
+  width: 100%;
+  height: 50%;
+  display: block;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 50, 0.5), rgba(0, 0, 50, 0.5)),
+    url('img/studio1.jpeg') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+
+[data-aos] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Per differenziare direzioni */
+[data-aos="fade-right"] {
+  transform: translateX(-20px);
+}
+[data-aos="fade-right"].aos-animate {
+  transform: translateX(0);
+}
+
+[data-aos="fade-left"] {
+  transform: translateX(20px);
+}
+[data-aos="fade-left"].aos-animate {
+  transform: translateX(0);
+}
+
+.grayscale-hover {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+
+.grayscale-hover:hover {
+  filter: grayscale(0%);
+}
+
+.banner-hero img {
+  display: block;
+  width: 100%;
+  height: 200px;       /* Altezza del banner, regolabile */
+  object-fit: cover;   /* Ritaglia l'immagine per riempire senza deformarla */
+  margin: 0;
+  padding: 0;
+}
+
+.hero-image {
+  height: 150px;
+  overflow: hidden;
+}
+
+.hero-img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+  z-index: 1;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+}
